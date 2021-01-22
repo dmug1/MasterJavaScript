@@ -7,8 +7,7 @@ const userPrefs = {
 };
 
 const makeLowerCase = (input) => {
-  return
-  String(input).toLowerCase();
+  return  String(input).toLowerCase();
 };
 
 userPrefs.setting = makeLowerCase
