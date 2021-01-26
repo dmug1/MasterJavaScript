@@ -1,0 +1,49 @@
+"use strict";
+/*
+  WRITE YOUR SOLUTION HERE
+*/
+
+class Movie{
+  constructor(title,director,genre,releaseYear,rating){
+    this.title = title,
+    this.director = director,
+    this.genre = genre,
+    this.releaseYear = releaseYear,
+    this.rating = rating
+  };  
+
+  MovieData() {
+      return `${this.title}, a ${this.surname} film directed by ${this.director} was released in ${this.releaseYear}. 
+      It received a ratinf of ${this.rating} stars.`;
+  };
+
+  getOverview() {
+    return `${this.title}, a ${this.genre} film directed by ${this.director} was released in ${this.releaseYear}. 
+    It received a rating of ${this.rating}`;
+  }
+}
+
+const Spiderman = new Movie("Spiderman", "Sam Raimi", "Action", 2002, 87);
+
+const Batman = new Movie(
+  "The Dark Knight",
+  "Christopher Nolan",
+  "Action",
+  2008,
+  83
+);
+
+const TheNotebook = new Movie(
+  "The Notebook",
+  "Nick Cassavetes",
+  "Romance",
+  2004,
+  54
+);
+
+
+console.log(Batman.MovieData());
+console.log(Spiderman.MovieData());
+console.log(TheNotebook.MovieData());
+
+
