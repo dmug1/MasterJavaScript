@@ -28,4 +28,16 @@ const menu = [
 
 const vegetarianOptions = menu.filter(vegetarianDish => vegetarianDish.isVegetarian === true);
 
-console.log(vegetarianOptions);
+
+function createVegMenu(vegetarianOptions){
+  const menuNode = document.querySelector('#menu');
+  vegetarianOptions.forEach(function(option){
+    let dish = document.createElement("li");
+    dish.textContent = option.name;
+    console.log(option);
+    menuNode.appendChild(dish);
+  });
+};
+
+
+createVegMenu(vegetarianOptions);
