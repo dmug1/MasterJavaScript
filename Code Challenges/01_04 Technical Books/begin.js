@@ -33,3 +33,17 @@ class Book {
 /*
   WRITE YOUR SOLUTION HERE
 */
+
+class TechnicalBook extends Book{
+  constructor(title, author, ISBN, numCopies, version) {
+    super(title, author, ISBN, numCopies);
+    this.edition = edition;
+  }
+  
+  getEdition() {
+    return `The current version of this book is ${this.edition}`;
+  }
+};
+
+const LivroTecnico = new TechnicalBook("Livro Tecnico", "Suzanne Collins", 123919, 5,1);
+console.log(LivroTecnico);
