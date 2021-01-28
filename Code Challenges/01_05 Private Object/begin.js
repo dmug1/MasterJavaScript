@@ -5,7 +5,7 @@
 class User{
   constructor(username, password, age){
     this.username = username,
-    this.password = password,
+    this.password = Symbol(password),
     this.age = age
   }
 };
