@@ -10,9 +10,4 @@ coffeeDate = (arr) => {
     return `The total bill is $${coffeSum * 1.25}`;
 };
 
-coffeeDate([2, 5, 7, 1, 4]);
-
-
-
-
-console.log(coffeeDate([2, 5, 7, 1, 4]));
+console.log(coffeeDate([22222, 5, 7, 12, 4,70]));
